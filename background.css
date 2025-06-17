@@ -1,0 +1,43 @@
+*
+{
+    margin:0 auto;
+    padding:0;
+}
+
+div{
+    border:1px solid red;
+    width: 1200px;
+    height:500px;
+    margin-top:10px;
+    text-align: center;
+    font-size: 40px;
+}
+.first
+{
+    /* background-color: orange; */
+    /* background-color: #61480F; */
+    background-color: rgb(200,100,50);
+
+}
+.second
+{
+    /* background:linear-gradient(orange,green,blue); */
+    /* background:-webkit-linear-gradient(left,orange,green,blue); */
+    /* background:-webkit-linear-gradient(40deg,orange,green,blue); */
+    background:-webkit-radial-gradient(top left,orange,green,blue);
+}
+
+
+.third
+{
+    background-image:url('https://static.vecteezy.com/system/resources/thumbnails/049/855/347/small_2x/nature-background-high-resolution-wallpaper-for-a-serene-and-stunning-view-photo.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.fourth
+{
+    background:orange url('https://images.pexels.com/photos/2486168/pexels-photo-2486168.jpeg');
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+}

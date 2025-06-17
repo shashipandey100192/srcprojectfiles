@@ -1,0 +1,15 @@
+.second
+{
+    background-color: orange;
+    color:blue;
+
+}
+.third
+{
+    /* background-color: orange; */
+     /* background-color:#da6e6e; */
+     background-color: rgb();
+    padding:20px;
+    height: 200px;
+    width: 500px;
+}

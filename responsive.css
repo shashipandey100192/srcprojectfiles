@@ -1,0 +1,76 @@
+*
+{
+    margin:0 auto;
+    padding:0;
+}
+
+.page
+{
+    width:1200px;
+    height: auto;
+    display: flex;
+}
+.page section
+{
+    flex:1;
+    border:1px solid red;
+    padding:20px;
+    box-sizing: border-box;
+}
+
+.page img
+{
+    width: 100%;
+}
+.page p
+{
+    text-align: justify;
+}
+
+
+@media(max-width:1200px)
+{
+    body{
+        background-color: antiquewhite;
+    }
+    .hd1
+    {
+        display: none;
+    }
+
+}
+
+
+
+@media(max-width:900px)
+{
+    body{
+        background-color: rgb(255, 181, 85);
+    }
+    .hd2
+    {
+        display: none;
+    }
+}
+
+
+
+@media(max-width:500px)
+{
+    body{
+        background-color: rgb(0, 0, 0);
+        color:white;
+    }
+    .page{
+        flex-direction: column;
+    }
+    .page section
+    {
+        margin-top:10px;
+        background-color: blueviolet;
+    }
+    .hd1,.hd2
+    {
+        display: block;
+    }
+}

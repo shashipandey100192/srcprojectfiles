@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .first
+        {
+            color:red;
+            text-align: center;
+            background-color: orange;
+        }
+        .second
+        {
+            text-transform: uppercase;
+        }
+        .third
+        {
+            text-shadow: 3px 6px 5px red;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>this is heading</h1>
+    <h1>this is heading</h1>
+    <h1>this is heading</h1>
+    <h1>this is heading</h1>
+    <h1>this is heading</h1>
+
+<script>
+    var myele = document.getElementsByTagName("h1");
+    console.log(myele);
+
+    myele[0].addEventListener("click",()=>{
+        myele[0].style.color="red";
+    });
+
+    myele[1].addEventListener("click",()=>{
+        myele[1].className="first";
+    });
+
+     myele[2].addEventListener("click",()=>{
+        myele[2].classList.add("first","second","third");
+    });
+
+    myele[2].addEventListener("dblclick",()=>{
+        myele[2].classList.remove("first");
+    });
+
+
+    myele[3].addEventListener("click",()=>{
+        myele[3].classList.toggle("third");
+    });
+
+</script>
+
+    
+</body>
+</html>

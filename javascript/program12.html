@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            list-style-type: none;
+        }
+
+        ul input {
+            padding: 8px;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul>
+        <li> <input type="text" placeholder="username" id="user"></li>
+        <li> <input type="password" placeholder="password" id="pass"></li>
+        <li> <input type="button" value="login" onclick="loginpage()"></li>
+    </ul>
+
+    <script>
+
+        function loginpage() {
+            var juser, jpass;
+            juser = document.getElementById('user');
+            jpass = document.getElementById('pass');
+
+            if (juser.value == "" || jpass.value == "") {
+                alert("user and password is blank");
+            }
+            else {
+                if (juser.value == "admin" && jpass.value == "123") {
+                    alert("welcome to dashboard");
+                    window.location.href="program10.html";
+                }
+                else {
+                    alert("user and password don't match");
+                    
+                }
+            }
+
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>

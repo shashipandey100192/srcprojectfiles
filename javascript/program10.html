@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<input type="password">
+<input type="button" value="show">
+
+
+<script>
+ var myele = document.querySelectorAll('input');
+ console.log(myele);
+ 
+ 
+ myele[1].addEventListener("click",()=>{
+    // myele[0].setAttribute("type","text");
+
+    var a = myele[0].getAttribute("type");
+    if(a=="password")
+ {
+     myele[0].setAttribute("type","text");
+    myele[1].setAttribute("value","hide");
+ }
+ else{
+     myele[0].setAttribute("type","password");
+      myele[1].setAttribute("value","show");
+ }
+ });
+
+</script>
+
+
+</body>
+</html>

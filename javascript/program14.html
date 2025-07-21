@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    
+<input type="text" placeholder="enter name" id="myinput">
+<input type="button" value="add emp" onclick="addemp()">
+<input type="button" value="remove" onclick="removedata()">
+<input type="button" value="find" onclick="searchindex()">
+
+
+<script>
+
+var emp =["kumar",600,"rohit"];
+
+
+function addemp()
+{
+    var jinput = document.getElementById('myinput');
+    // emp.unshift(jinput.value);
+     emp.push(jinput.value);
+console.log(emp);
+
+}
+
+
+function removedata()
+{
+    // emp.pop();
+    emp.shift();
+    console.log(emp);
+}
+
+function searchindex()
+{
+    var searchdata = document.getElementById('myinput');
+    // var a  = emp.indexOf(searchdata.value);
+     var a  = emp.lastIndexOf(searchdata.value);
+    console.log(a);
+}
+
+
+
+
+</script>
+
+</body>
+</html>

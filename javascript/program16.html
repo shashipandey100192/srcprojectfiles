@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1></h1>
+    <h1></h1>
+
+
+
+    <script>
+
+        // var person=["name","age","phone"];
+        // console.log(person);
+
+        // const [name] = person;
+        //     console.log(name);
+
+
+    var bag={pencil:"12pic",lunch:"10pic",waterbottle:"1",books:5};
+
+        console.log(bag);
+
+    const {pencil,books} = bag;
+
+        console.log(pencil);
+var heading = document.querySelectorAll('h1');
+        heading[0].innerHTML=pencil;
+        heading[1].innerHTML=`${books+1}`;
+
+        
+    
+
+    </script>
+</body>
+</html>

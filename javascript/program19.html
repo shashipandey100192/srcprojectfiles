@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            font-size: 70px;
+            letter-spacing: 10px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1></h1>
+    <input type="text" placeholder="enter cap" maxlength="4">
+    <button type="button" onclick="varify()">submit</button>
+
+
+    <script>
+        var m = parseInt((Math.random() + 1) * 1432);
+        console.log(m);
+        var dcap = document.querySelectorAll("h1,input");
+        dcap[0].innerHTML = m;
+
+        function varify() {
+            if (dcap[1].value == m) {
+                alert("welcome");
+                window.location.href="http://google.com";
+            }
+            else {
+                alert("your captch not valid");
+                
+            }
+        }
+
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>

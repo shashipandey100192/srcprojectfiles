@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="one"></h1>
+
+
+<script>
+function mytime()
+{
+    var watch = document.getElementById("one");
+    var a =new Date();
+
+    var h = a.getHours();
+    var m = a.getMinutes();
+    var s = a.getSeconds();
+    var tm = `${h}:${m}:${s}`;
+    watch.innerHTML=tm;
+    console.log(a);
+    console.log(typeof(a));
+    if(s>=30)
+{
+    document.bgColor="red";
+}
+else{
+    document.bgColor="orange";
+}
+}
+mytime();
+setInterval("mytime()",1000);
+
+
+
+
+
+
+</script>
+    
+</body>
+</html>

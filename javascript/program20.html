@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="details"></div>
+    
+<script>
+var course = prompt("enter course");
+    switch(course)
+    {
+        case "mern":
+            alert("your course is:"+ course);
+            studentdetails();
+        break;
+        case "java":
+            alert("your course is:"+ course);
+        break;
+        case "web":
+            alert("your course is:"+ course);
+        break;
+        default:
+            alert("course is invlaid");
+    }
+
+var sname,sage,fees;
+function studentdetails()
+{
+    sname = prompt("enter student name");
+    sage = prompt("enter student age");
+    switch(true)
+    {
+        case sage>=50:
+            alert("over age");
+            fees = 6000;
+        break;
+        case sage>=30:
+            alert("under age");
+            fees = 4000;
+        break;
+        case sage>=20:
+            alert("teen age");
+            fees=3000;
+        break;
+        default:
+            alert("this age is not valid for course:"+sage); 
+    }
+    printdetails();
+
+}   
+
+
+function printdetails()
+{
+    jpage = document.getElementById('details');
+    jpage.innerHTML = `
+    <h2>Student Name: ${sname}</h2>
+    <h2>Student Age: ${sage}</h2>
+    <h2>Student Course: ${course}</h2>
+    <h2>Course Fees: ${fees}</h2> 
+    <input type="button" value="print" onclick="printpage()" >
+    `;
+
+    
+}
+
+function printpage()
+{
+    window.print();
+}
+
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>
